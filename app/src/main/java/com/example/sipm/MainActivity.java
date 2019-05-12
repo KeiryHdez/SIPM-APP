@@ -6,12 +6,25 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
+    private RequestQueue quenue;
+    private String url;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        utl = getResources().getString(R.string.url)
+                quene = Volley.newRequestQueue( contrxt: this);
+
+        Log.i( tag: "LOGCAT", url);
+
+        gerMethot(url);
     }
 
+    public void getMethot(String url){
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>)
+    }
 
     @Override
     protected void onPause() {

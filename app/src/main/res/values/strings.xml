@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SIPM</string>
+    <string name="url">http://dummy.restapiexample.com</string><
 </resources>
