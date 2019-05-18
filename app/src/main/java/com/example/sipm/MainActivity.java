@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         utl = getResources().getString(R.string.url)
-                quene = Volley.newRequestQueue( contrxt: this);
+                quene = Volley.newRequestQueue( context: this);
 
         Log.i( tag: "LOGCAT", url);
 
@@ -23,7 +23,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getMethot(String url){
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>)
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>(){
+            @Override
+            public void onResponse(JSONArray response) {
+                //Log.i("LOGCAT", response);
+                for(int i  = 0; i < response.lenght(); i ++){
+
+                    try{
+                        JSONObject jsonObject = response.getJSONObject(i);
+                        Log.i( tag: "LOGCAT", jsonObject.getString( name: "firstName")) ;
+
+                    }catch (Exception ex){}
+                }
+            }
+        }, new Response.ErrorListener())
     }
 
     @Override

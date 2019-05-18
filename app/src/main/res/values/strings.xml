@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">SIPM</string>
-    <string name="url">http://dummy.restapiexample.com</string><
+    <string name="url">http://jairoeduardov.free.beeceptot.com/my/api/path</string>
+    <
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
