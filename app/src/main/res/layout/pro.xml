@@ -22,7 +22,7 @@
                 android:id="@+id/Bfo"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/L1" />
+                app:srcCompat="@drawable/l1" />
         </LinearLayout>
 
         <LinearLayout
