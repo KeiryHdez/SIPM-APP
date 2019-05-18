@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">SIPM</string>
-    <string name="url">http://jairoeduardov.free.beeceptot.com/my/api/path</string>
-    <
+    <string name="url">http://localhost:8080/sipm</string>
+
+    <string name="ini">&#xe902;</string>
+    <string name="info">&#xe923;</string>
+    <string name="bus">&#xe986;</string>
+    <string name="fav">&#xe9da;</string>
+    <string name="car">&#xe93a;</string>
+    <string name="use">&#xe971;</string>
+    <string name="cat">&#xe936;</string>
+
     <string name="title_activity_main2">Main2Activity</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
