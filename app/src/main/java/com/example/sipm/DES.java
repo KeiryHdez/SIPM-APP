@@ -3,6 +3,7 @@ package com.example.sipm;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.sipm.entities.Articulos;
@@ -20,6 +21,7 @@ public class DES extends AppCompatActivity {
         TextView Precio = (TextView) findViewById(R.id.pre);
         TextView Marca = (TextView) findViewById(R.id.mar);
         TextView Descri = (TextView) findViewById(R.id.des);
+        ImageView Foto = (ImageView) findViewById(R.id.fot);
 
 
         Log.i("LOGCAT", articulos.getNombre());

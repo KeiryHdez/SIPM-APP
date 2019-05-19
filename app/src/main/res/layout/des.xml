@@ -31,7 +31,7 @@
         android:layout_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/colorPrimary" />
+        app:srcCompat="@drawable/l2" />
 
     <TextView
         android:id="@+id/textView9"
