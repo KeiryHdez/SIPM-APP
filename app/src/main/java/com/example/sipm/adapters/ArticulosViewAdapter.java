@@ -2,7 +2,6 @@ package com.example.sipm.adapters;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.sipm.R;
 import com.example.sipm.entities.Articulos;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -75,10 +75,9 @@ public class ArticulosViewAdapter extends RecyclerView.Adapter<ArticulosViewHold
         ArticulosViewHolder.anom.setText(articulos.get(i).getNombre());
         ArticulosViewHolder.apre.setText( "$" +articulos.get(i).getPrecio());
         ArticulosViewHolder.amar.setText(articulos.get(i).getMarca());
-        Log.i("LOGCAT", articulos.get(i).getMarca());
 
         if(articulos.get(i).getImg() != null && !articulos.get(i).getImg().isEmpty()){
-            picasso.get().load(articulos.get(i).getImg())
+            Picasso.get().load(articulos.get(i).getImg())
 
                     .fit()
                     // To prevent fade animation

@@ -13,7 +13,7 @@ public class DES extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.des);
-        Articulos articulos = (Articulos) getIntent().getSerializableExtra("NaturaPerson");
+        Articulos articulos = (Articulos) getIntent().getSerializableExtra("Articulos");
 
 
         TextView Nombre = (TextView) findViewById(R.id.nom);
